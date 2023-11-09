@@ -1,7 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const mercadopago = require('mercadopago')
 require('./config/db.js')
 //importamos la configuracion de la base de datos
 const routes = require('./routes/index.js')
