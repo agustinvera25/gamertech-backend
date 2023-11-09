@@ -10,7 +10,7 @@ const routes = require('./routes/index.js')
 const app = express()
 //Inicializamos la aplicación usando server
 
-const PORT = 5000
+const PORT = 5001
 //Establecemos puerto por defecto 5000 
 
 app.use(bodyParser.json())
