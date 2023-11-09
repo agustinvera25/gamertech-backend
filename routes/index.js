@@ -27,7 +27,6 @@ router.get('/product/get-random', productController.getRandomProduct)
 //Buscar producto
 router.get('/product/search', productController.searchProduct)
 
-//
 router.post('/create_preference', mercadoPagoController.createPreference)
 
 module.exports = router

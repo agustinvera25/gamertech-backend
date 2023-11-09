@@ -5,6 +5,11 @@ require('./config/db.js')
 //importamos la configuracion de la base de datos
 const routes = require('./routes/index.js')
 //importamos las rutas establecidas
+const mercadopago = require('mercadopago')
+
+mercadopago.configure({
+  access_token: process.env.MP_TOKEN,
+});
 
 const app = express()
 //Inicializamos la aplicación usando server
