@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://codificadores:X7gItYWJGmAEX8G1@ecommerce.pcytvzz.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true})
+mongoose.connect(process.env.DATABASE, {useNewUrlParser: true})
 
 mongoose.connection.on('error', (error)=>{
     console.log(`Ha ocurrido un problema al intentar conectar con la base de datos: ${error}`)
