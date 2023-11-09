@@ -7,9 +7,7 @@ const router = express.Router()
 //inicializamos el routes con express
 
 //Obtener todos los productos
-router.get('/', (req, res) => res.json("API CODIFICADORES"))
-
-//Obtener todos los productos
+router.get('/', productController.getAllProducts)
 router.get('/products', productController.getAllProducts)
 
 //Obtener un solo producto especifico
