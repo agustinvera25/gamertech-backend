@@ -7,6 +7,9 @@ const routes = require('./routes/index.js')
 //importamos las rutas establecidas
 const mercadopago = require('mercadopago')
 
+//importamos y configuramos dotenv
+require('dotenv').config({path: '.env'})
+
 mercadopago.configure({
   access_token: process.env.MP_TOKEN,
 });

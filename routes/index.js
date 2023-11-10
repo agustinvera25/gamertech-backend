@@ -19,14 +19,15 @@ router.get('/product/:id', productController.getOneProduct)
 router.get('/products/:categoria', productController.getProductsByCategory)
 
 //Obtener los productos en oferta
-router.get('/product/get-offered', productController.getOfferedProducts)
+router.get('/get-offered', productController.getOfferedProducts)
 
 //Obtener los productos en oferta
 router.get('/product/get-random', productController.getRandomProduct)
 
 //Buscar producto
-router.get('/product/search', productController.searchProduct)
+router.get('/search/product', productController.searchProduct)
 
+//Crea la preferencia usando la libreria de mercadopago y devuelve el id de la preferencia creada
 router.post('/create_preference', mercadoPagoController.createPreference)
 
 module.exports = router
