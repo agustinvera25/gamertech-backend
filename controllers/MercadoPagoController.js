@@ -1,4 +1,8 @@
+require('dotenv').config({path: '.env'})
 
+mercadopago.configure({
+  access_token: process.env.MP_TOKEN,
+});
 
 exports.createPreference = (req, res) => {
   let preference = {
